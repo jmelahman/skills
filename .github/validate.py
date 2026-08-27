@@ -5,7 +5,7 @@ Checks that every skill under skills/ is discoverable by Claude Code, the
 skills.sh CLI, and anything else that follows the Agent Skills spec, and that
 the plugin and marketplace manifests agree with each other.
 
-Run locally with `python3 scripts/validate.py`. For a second opinion from the
+Run locally with `python3 .github/validate.py`. For a second opinion from the
 authoritative implementation, run `claude plugin validate .claude-plugin/plugin.json`.
 """
 

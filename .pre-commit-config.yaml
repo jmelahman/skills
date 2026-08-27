@@ -12,11 +12,11 @@ repos:
     hooks:
       - id: validate-skills
         name: validate skills and manifests
-        entry: python3 scripts/validate.py
+        entry: python3 .github/validate.py
         language: python
         additional_dependencies: [pyyaml]
         pass_filenames: false
-        files: ^(skills/|\.claude-plugin/|scripts/validate\.py$)
+        files: ^(skills/|\.claude-plugin/|\.github/validate\.py$)
 
       - id: shellcheck
         name: shellcheck
