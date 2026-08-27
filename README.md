@@ -65,12 +65,6 @@ prek run --all-files
 
 CI runs the same hooks — [`.github/workflows/validate.yml`](.github/workflows/validate.yml)
 
-For a second opinion from the implementation that actually loads these files:
-
-```sh
-claude plugin validate .claude-plugin/plugin.json
-```
-
 ## License
 
 [GPL-3.0-or-later](LICENSE).
