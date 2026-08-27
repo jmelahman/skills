@@ -3,6 +3,12 @@
 [Agent Skills](https://agentskills.io) I use with Claude Code, kept under version control and
 updated via `git`.
 
+## Skills
+
+| Skill | Description |
+| --- | --- |
+| [testing](skills/testing/) | Rules for tests that fail only when real behavior breaks, distilled from 75 Google Testing on the Toilet posts: what to test, test doubles, structure, assertions, flakiness, and design for testability. |
+
 ## Install
 
 ### From a clone
