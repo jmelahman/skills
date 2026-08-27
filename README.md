@@ -1,13 +1,11 @@
 # skills
 
 [Agent Skills](https://agentskills.io) I use with Claude Code, kept under version control and
-updated with a simple `git pull`.
+updated via `git`.
 
 ## Install
 
 ### From a clone
-
-A simple way to track and manage skills either in your home directory.
 
 ```sh
 git clone git@github.com:jmelahman/skills.git ~/.claude/skills/jmelahman
@@ -15,15 +13,12 @@ cd ~/.claude/skills
 ln -s jmelahman/skills/testing testing
 ```
 
-The clone has no top-level `SKILL.md`, so Claude Code ignores it and picks up only
-
-Running `git pull` in the clone will update the content via symlinks.
+The clone has no top-level `SKILL.md`, so Claude Code ignores it and picks up only the links.
 
 ### Into a project with `git subtree`
 
-To check skills into a project so that everyone working on it gets them, vendor
-this repository with `git subtree` and link what you want into `.claude/skills/`,
-where Claude Code looks for project skills:
+To check skills into an existing `git` project so that everyone working on it gets them, vendor
+this repository with `git subtree` and link as needed,
 
 ```sh
 git remote add skills git@github.com:jmelahman/skills.git
@@ -37,11 +32,6 @@ Update with:
 ```sh
 git subtree pull --prefix .claude/skills/jmelahman skills master --squash
 ```
-
-Unlike a submodule, the content lands in the project's own history, so a plain
-`git clone` of the project brings the skills along — nobody else needs an init or
-update step. `--squash` keeps this repository's commits out of the project log;
-drop it to keep the full history.
 
 ### As a Claude Code plugin
 
